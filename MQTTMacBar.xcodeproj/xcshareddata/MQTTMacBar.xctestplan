@@ -1,0 +1,20 @@
+{
+  "configurations" : [
+    {
+      "id" : "3CE1212A-D5C8-4940-8D0F-E8CDE30B5190",
+      "name" : "Test Scheme Action",
+      "options" : {}
+    }
+  ],
+  "defaultOptions" : {},
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MQTTMacBar.xcodeproj",
+        "identifier" : "08EF128402294884A1FB70EA",
+        "name" : "MQTTMacBarTests"
+      }
+    }
+  ],
+  "version" : 1
+}
