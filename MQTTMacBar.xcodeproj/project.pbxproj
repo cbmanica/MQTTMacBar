@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F08F0592E2D3BC500F494F1 /* CocoaMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = 1F08F0582E2D3BC500F494F1 /* CocoaMQTT */; };
+		1F08F05B2E2D3BC500F494F1 /* CocoaMQTTWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 1F08F05A2E2D3BC500F494F1 /* CocoaMQTTWebSocket */; };
+		4A73B391CB51466E82939D4D /* JsonKeyPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83C428FC26B4B008DA44188 /* JsonKeyPathTests.swift */; };
+		5C9A2BA8FEBF41D186C2F454 /* MessageDiffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B635DA8C1347D3B26D9FD5 /* MessageDiffTests.swift */; };
+		1355BAA73C484FDEB952C11A /* MqttSubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB245A84C244CBA8734EFEF /* MqttSubscriptionTests.swift */; };
+		BC1C050A516A469FBE29F554 /* SubscriptionStatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8AA4FB85904A459239A745 /* SubscriptionStatsTests.swift */; };
+		962B4C0245514AF9AD40FFBB /* TopicNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03306CF8BEB468A92727007 /* TopicNodeTests.swift */; };
+		F28E740B98CF4ABFAA02133F /* TopicSubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400733444E472C96575216 /* TopicSubscriptionTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66671A0087E94BBF8D8552DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F08F03A2E2D3B5300F494F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F08F0412E2D3B5300F494F1;
+			remoteInfo = MQTTMacBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F08F0422E2D3B5300F494F1 /* MQTTMacBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQTTMacBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D9CE75DEE949F1951C5D2B /* MQTTMacBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQTTMacBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B83C428FC26B4B008DA44188 /* JsonKeyPathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonKeyPathTests.swift; sourceTree = "<group>"; };
+		04B635DA8C1347D3B26D9FD5 /* MessageDiffTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDiffTests.swift; sourceTree = "<group>"; };
+		1CB245A84C244CBA8734EFEF /* MqttSubscriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttSubscriptionTests.swift; sourceTree = "<group>"; };
+		6D8AA4FB85904A459239A745 /* SubscriptionStatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionStatsTests.swift; sourceTree = "<group>"; };
+		D03306CF8BEB468A92727007 /* TopicNodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicNodeTests.swift; sourceTree = "<group>"; };
+		8E400733444E472C96575216 /* TopicSubscriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSubscriptionTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1F08F0442E2D3B5300F494F1 /* MQTTMacBar */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MQTTMacBar;
+			sourceTree = "<group>";
+		};
+
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F08F03F2E2D3B5300F494F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F08F05B2E2D3BC500F494F1 /* CocoaMQTTWebSocket in Frameworks */,
+				1F08F0592E2D3BC500F494F1 /* CocoaMQTT in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7749FC0070234457AD23AC21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F08F0392E2D3B5300F494F1 = {
+			isa = PBXGroup;
+			children = (
+				1F08F0442E2D3B5300F494F1 /* MQTTMacBar */,
+				85C07C53F1DE43E7AAF34D59 /* MQTTMacBarTests */,
+				1F08F0432E2D3B5300F494F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F08F0432E2D3B5300F494F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F08F0422E2D3B5300F494F1 /* MQTTMacBar.app */,
+				B9D9CE75DEE949F1951C5D2B /* MQTTMacBarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85C07C53F1DE43E7AAF34D59 /* MQTTMacBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				B83C428FC26B4B008DA44188 /* JsonKeyPathTests.swift */,
+				04B635DA8C1347D3B26D9FD5 /* MessageDiffTests.swift */,
+				1CB245A84C244CBA8734EFEF /* MqttSubscriptionTests.swift */,
+				6D8AA4FB85904A459239A745 /* SubscriptionStatsTests.swift */,
+				D03306CF8BEB468A92727007 /* TopicNodeTests.swift */,
+				8E400733444E472C96575216 /* TopicSubscriptionTests.swift */,
+			);
+			name = MQTTMacBarTests;
+			path = MQTTMacBarTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F08F0412E2D3B5300F494F1 /* MQTTMacBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F08F04E2E2D3B5400F494F1 /* Build configuration list for PBXNativeTarget "MQTTMacBar" */;
+			buildPhases = (
+				1F08F03E2E2D3B5300F494F1 /* Sources */,
+				1F08F03F2E2D3B5300F494F1 /* Frameworks */,
+				1F08F0402E2D3B5300F494F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1F08F0442E2D3B5300F494F1 /* MQTTMacBar */,
+			);
+			name = MQTTMacBar;
+			packageProductDependencies = (
+				1F08F0582E2D3BC500F494F1 /* CocoaMQTT */,
+				1F08F05A2E2D3BC500F494F1 /* CocoaMQTTWebSocket */,
+			);
+			productName = MQTTMacBar;
+			productReference = 1F08F0422E2D3B5300F494F1 /* MQTTMacBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08EF128402294884A1FB70EA /* MQTTMacBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FFAEB970AEC43EDAF06EB02 /* Build configuration list for PBXNativeTarget "MQTTMacBarTests" */;
+			buildPhases = (
+				CEF9B7C813FB4D60B300A5EA /* Sources */,
+				7749FC0070234457AD23AC21 /* Frameworks */,
+				F98098A560A6487C82B36ABE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C01E194DF434425C9BB71410 /* PBXTargetDependency */,
+			);
+			name = MQTTMacBarTests;
+			productName = MQTTMacBarTests;
+			productReference = B9D9CE75DEE949F1951C5D2B /* MQTTMacBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F08F03A2E2D3B5300F494F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					1F08F0412E2D3B5300F494F1 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					08EF128402294884A1FB70EA = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 1F08F0412E2D3B5300F494F1;
+					};
+				};
+			};
+			buildConfigurationList = 1F08F03D2E2D3B5300F494F1 /* Build configuration list for PBXProject "MQTTMacBar" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F08F0392E2D3B5300F494F1;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1F08F0572E2D3BC500F494F1 /* XCRemoteSwiftPackageReference "CocoaMQTT" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1F08F0432E2D3B5300F494F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F08F0412E2D3B5300F494F1 /* MQTTMacBar */,
+				08EF128402294884A1FB70EA /* MQTTMacBarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F08F0402E2D3B5300F494F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98098A560A6487C82B36ABE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F08F03E2E2D3B5300F494F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF9B7C813FB4D60B300A5EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A73B391CB51466E82939D4D /* JsonKeyPathTests.swift in Sources */,
+				5C9A2BA8FEBF41D186C2F454 /* MessageDiffTests.swift in Sources */,
+				1355BAA73C484FDEB952C11A /* MqttSubscriptionTests.swift in Sources */,
+				BC1C050A516A469FBE29F554 /* SubscriptionStatsTests.swift in Sources */,
+				962B4C0245514AF9AD40FFBB /* TopicNodeTests.swift in Sources */,
+				F28E740B98CF4ABFAA02133F /* TopicSubscriptionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C01E194DF434425C9BB71410 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F08F0412E2D3B5300F494F1 /* MQTTMacBar */;
+			targetProxy = 66671A0087E94BBF8D8552DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F08F04C2E2D3B5400F494F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F08F04D2E2D3B5400F494F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1F08F04F2E2D3B5400F494F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = MQTTMacBar/MQTTMacBar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.theuntaintedsky.MQTTMacBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1F08F0502E2D3B5400F494F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = MQTTMacBar/MQTTMacBar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.theuntaintedsky.MQTTMacBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		197DF1BBC8E24F809FE8930D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.theuntaintedsky.MQTTMacBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQTTMacBar.app/Contents/MacOS/MQTTMacBar";
+			};
+			name = Debug;
+		};
+		3A950868668F450C9F49689F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.theuntaintedsky.MQTTMacBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MQTTMacBar.app/Contents/MacOS/MQTTMacBar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F08F03D2E2D3B5300F494F1 /* Build configuration list for PBXProject "MQTTMacBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F08F04C2E2D3B5400F494F1 /* Debug */,
+				1F08F04D2E2D3B5400F494F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F08F04E2E2D3B5400F494F1 /* Build configuration list for PBXNativeTarget "MQTTMacBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F08F04F2E2D3B5400F494F1 /* Debug */,
+				1F08F0502E2D3B5400F494F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FFAEB970AEC43EDAF06EB02 /* Build configuration list for PBXNativeTarget "MQTTMacBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				197DF1BBC8E24F809FE8930D /* Debug */,
+				3A950868668F450C9F49689F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F08F0572E2D3BC500F494F1 /* XCRemoteSwiftPackageReference "CocoaMQTT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/emqx/CocoaMQTT.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F08F0582E2D3BC500F494F1 /* CocoaMQTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F08F0572E2D3BC500F494F1 /* XCRemoteSwiftPackageReference "CocoaMQTT" */;
+			productName = CocoaMQTT;
+		};
+		1F08F05A2E2D3BC500F494F1 /* CocoaMQTTWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F08F0572E2D3BC500F494F1 /* XCRemoteSwiftPackageReference "CocoaMQTT" */;
+			productName = CocoaMQTTWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1F08F03A2E2D3B5300F494F1 /* Project object */;
+}
